@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+header {
+  justify-content: space-between;
+  display: flex;
+  padding: 30px 15px;
+  align-items: center;
+}
+ul {
+  list-style-type: none;
+  overflow: hidden;
+}
+h2 {
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 400;
+  margin-right: auto;
+}
+ul li {
+  display: inline-block;
+  position: relative;
+}
+ul li a {
+  color: black;
+  text-decoration: none;
+  display: block;
+  cursor: pointer;
+  padding: 15px 20px;
+  font-size: 18px;
+  font-weight: 500;
+  transition: all 0.3s ease 0s;
+}
+li a:hover {
+  background: rgba(0, 0, 0, 0.354);
+  border-radius: 30px;
+  transition: all 0.3s ease 0s;
+}
+button {
+  border: none;
+  border-radius: 20px;
+  width: 80px;
+  height: 45px;
+  background: blue;
+  color: white;
+  font-weight: 500;
+  margin-left: 10px;
+  transition: all 0.3s ease 0s;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 18px;
+}
+button:hover {
+  background: rgba(0, 0, 255, 0.553);
+  transition: all 0.3s ease 0s;
+  border-radius: 20px;
+}
+.text-warpper {
+  display: flex;
+  justify-content: flex-start;
+  background: black;
+  overflow: hidden;
+}
+
+h1 {
+  font-size: 40px;
+  text-transform: uppercase;
+  color: white;
+  -webkit-text-stroke-width: 0.1px;
+  -webkit-text-stroke-color: #fff;
+  -text-stroke-color: #000;
+  white-space: nowrap;
+  padding: 0 5rem;
+  letter-spacing: 1px;
+  animation: move-rtl 6000ms linear infinite;
+}
+@keyframes move-rtl {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+.listproduct .iteam img {
+  width: 70%;
+  object-fit: cover;
+  height: 200px;
+  margin: 20px 0;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.listproduct {
+  padding: 20px;
+  column-gap: 1%;
+  row-gap: 10px;
+  display: grid;
+  grid-template-columns: 25%;
+  justify-content: center;
+}
+.listproduct .iteam {
+  background-color: rgba(0, 0, 0, 0.326);
+  text-align: center;
+  border-radius: 10px;
+  margin-top: 10px;
+  margin-left: 10px;
+  width: 70%;
+}
+.listproduct .iteam h2 {
+  font-weight: 500;
+  font-size: large;
+  font-weight: bold;
+}
+.listproduct .iteam .price {
+  color: white;
+  letter-spacing: 1px;
+  padding: 20px;
+}
+.listproduct .iteam .price .buy {
+  display: block;
+  width: 85%;
+  height: 40px;
+  border: none;
+  border-radius: 20px;
+  background: black;
+  color: white;
+  cursor: pointer;
+  margin-top: 10px;
+  font-size: 15px;
+  transition: all 0.3s ease 0s;
+  font-weight: large;
+}
+.listproduct .iteam .price .buy:hover {
+  transition: all 0.3s ease 0s;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.511);
+  color: black;
+  font-size: 16px;
+}
